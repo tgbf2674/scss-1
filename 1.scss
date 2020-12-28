@@ -1,0 +1,15 @@
+$grey: #666;
+
+@mixin debug {
+  border: 1px solid red;
+  background: $grey;
+}
+.nav {
+  @include debug;
+  > ul {
+    background: white;
+    > li {
+      border: 1px solid red;
+    }
+  }
+}
